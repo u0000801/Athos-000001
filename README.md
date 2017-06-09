@@ -1,14 +1,14 @@
-Opt("TrayOnEventMode",1)
-Opt("TrayMenuMode",1)
+# Opt("TrayOnEventMode",1)
+# Opt("TrayMenuMode",1)
 
-$AboutItem = TrayCreateItem("About")
-TrayItemSetOnEvent(-1,"ReadList")
-TrayCreateItem("")
-$ExitItem = TrayCreateItem("Exit")
-TrayItemSetOnEvent(-1,"ReadList")
-
-Func ReadList()
- $SelectedItem = TrayItemGetText(@TRAY_ID)
+# $AboutItem = TrayCreateItem("About")
+# TrayItemSetOnEvent(-1,"ReadList")
+# TrayCreateItem("")
+# $ExitItem = TrayCreateItem("Exit")
+# TrayItemSetOnEvent(-1,"ReadList")
+#
+# Func ReadList()
+# $SelectedItem = TrayItemGetText(@TRAY_ID)
  If $SelectedItem="Exit" Then
   Exit
  ElseIf $SelectedItem="About" Then
